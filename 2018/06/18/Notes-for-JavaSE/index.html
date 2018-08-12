@@ -64,6 +64,50 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="https://fonts.loli.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Dancing Script:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
@@ -97,7 +141,7 @@
     root: '/',
     scheme: 'Muse',
     version: '6.3.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
     fancybox: true,
     fastclick: true,
     lazyload: false,
@@ -126,7 +170,7 @@
 <meta property="og:site_name" content="Kai Ma">
 <meta property="og:description" content="这是我Java培训时Java基础部分的笔记，只是按时间顺序简单的罗列了一下，没有做特别的整理，只是想在这里记录一下。一方面是为了分享，另一方面是为了方便自己查阅，面试前肯定要看看Java基础。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-15T07:08:57.946Z">
+<meta property="og:updated_time" content="2018-08-12T10:03:44.906Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Notes for JavaSE">
 <meta name="twitter:description" content="这是我Java培训时Java基础部分的笔记，只是按时间顺序简单的罗列了一下，没有做特别的整理，只是想在这里记录一下。一方面是为了分享，另一方面是为了方便自己查阅，面试前肯定要看看Java基础。">
@@ -419,7 +463,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-07-15 15:08:57" itemprop="dateModified" datetime="2018-07-15T15:08:57+08:00">2018-07-15</time>
+                <time title="Modified: 2018-08-12 18:03:44" itemprop="dateModified" datetime="2018-08-12T18:03:44+08:00">2018-08-12</time>
               
             
           </span>
@@ -478,11 +522,16 @@
       
 
       
-        <p>这是我Java培训时Java基础部分的笔记，只是按时间顺序简单的罗列了一下，没有做特别的整理，只是想在这里记录一下。一方面是为了分享，另一方面是为了方便自己查阅，面试前肯定要看看Java基础。 <a id="more"></a> &gt; 经济基础决定上层建筑。</p>
+        <p>这是我Java培训时Java基础部分的笔记，只是按时间顺序简单的罗列了一下，没有做特别的整理，只是想在这里记录一下。一方面是为了分享，另一方面是为了方便自己查阅，面试前肯定要看看Java基础。</p>
+<a id="more"></a>
+<blockquote>
+<p>经济基础决定上层建筑。</p>
+</blockquote>
 <p>没事的时候多看看，没有坏处。只有基础夯实了，才能有更长足的进步。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Lesson_02</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> a = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">long</span> b = <span class="number">100000000000000L</span>;</span><br><span class="line">        <span class="comment">// unlearn</span></span><br><span class="line">        <span class="comment">// 驼峰命名法</span></span><br><span class="line">        <span class="comment">// 帕斯卡命名法</span></span><br><span class="line">        <span class="comment">// js: 定义变量用 var 弱引用（js）VS强引用（Java）</span></span><br><span class="line">        <span class="comment">// js: 定义常量用const；java final</span></span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">char</span> myFamilyName = <span class="string">'刘'</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 变量提升</span></span><br><span class="line">        <span class="comment">// 1、类型兼容（整形之间、浮点型之间）</span></span><br><span class="line">        <span class="comment">// 2、目标的数据类型必须大于原始数据类型（长度）</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> int1 = <span class="number">123</span>;</span><br><span class="line">        <span class="keyword">long</span> long2 = <span class="number">123456778903456l</span>;</span><br><span class="line">        <span class="keyword">int</span> int2 = (<span class="keyword">int</span>)<span class="number">123456778903456l</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">float</span> f1 = <span class="number">1.934f</span>;</span><br><span class="line">        <span class="keyword">double</span> d1 = f1;</span><br><span class="line">        <span class="keyword">double</span> d2 = <span class="number">1.536253</span>;</span><br><span class="line">        <span class="keyword">float</span> f2 = (<span class="keyword">float</span>)d2;</span><br><span class="line">        <span class="keyword">int</span> int3 = (<span class="keyword">int</span>)f1;</span><br><span class="line">        System.out.println(int3);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 010</span></span><br><span class="line">        <span class="keyword">int</span> a1 = <span class="number">2</span>;</span><br><span class="line">        <span class="comment">// 101</span></span><br><span class="line">        <span class="comment">// 1 -- 1</span></span><br><span class="line">        <span class="comment">// 10 -- 2</span></span><br><span class="line">        <span class="comment">// 100 -- 4</span></span><br><span class="line">        <span class="comment">// 1000 -- 8</span></span><br><span class="line">        <span class="comment">// 10000 -- 16</span></span><br><span class="line">        <span class="comment">// 100000 -- 32</span></span><br><span class="line">        <span class="keyword">int</span> a2 = <span class="number">5</span>;</span><br><span class="line">        <span class="keyword">int</span> a3 = <span class="number">33</span>;</span><br><span class="line">        <span class="comment">// 按位与 按位或 按位异或</span></span><br><span class="line">        <span class="comment">// 按位与：同真才真，一假则假</span></span><br><span class="line">        <span class="comment">// 按位或：同假则假，一真则真</span></span><br><span class="line">        <span class="comment">// 按位异或：相异则真，相同则假</span></span><br><span class="line">        a3 = a1 ^ a2;</span><br><span class="line">        System.out.println(a3);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><strong>面向对象 OOP (Object Oriented Programming)</strong> <strong>面向过程 POP (Procedure Oriented Programming)</strong></p>
+<p><strong>面向对象 OOP (Object Oriented Programming)</strong><br>
+<strong>面向过程 POP (Procedure Oriented Programming)</strong></p>
 </blockquote>
 <h1 id="封装">封装</h1>
 <ol style="list-style-type: decimal">
@@ -497,7 +546,10 @@
 <h1 id="类">类</h1>
 <p>类是虚拟的，不具体的，是某些具有特定属性（特性、成员变量）和方法（行为、功能）的对象的抽象的结果。</p>
 <blockquote>
-<p>类和对象二者缺一不可。 对象是具体化的类。 类是抽象化的对象。 越往上（抽象），越简单；越往下（具体），越复杂。</p>
+<p>类和对象二者缺一不可。<br>
+对象是具体化的类。<br>
+类是抽象化的对象。<br>
+越往上（抽象），越简单；越往下（具体），越复杂。</p>
 </blockquote>
 <h1 id="方法论">方法论</h1>
 <ol style="list-style-type: decimal">
@@ -509,15 +561,18 @@
 <h1 id="方法的重载-overload">方法的重载 overload</h1>
 <p>在一个类中，具有相同签名(方法名)的方法可以有多个（参数不同）</p>
 <blockquote>
-<p>参数不同： 1. 参数的个数不同； 2. 参数的数据类型不同； 3. 返回值不参与方法的重载</p>
+<p>参数不同：<br>
+1. 参数的个数不同；<br>
+2. 参数的数据类型不同；<br>
+3. 返回值不参与方法的重载</p>
 </blockquote>
 <h1 id="方法的重写-覆盖-override">方法的重写 / 覆盖 override</h1>
 <blockquote>
 <p><strong>重写</strong>指的是在具有继承关系的两个类中，子类和父类具有相同签名（方法名）的方法，会在子类中覆盖父类（方法）</p>
 </blockquote>
 <p>当局部变量和成员变量（变量名相同）共同作用在一个代码块（区域）中的时候，局部变量会把成员变量覆盖，局部变量的优先级大</p>
-<p><code>this</code> 指代的是当前对象，调用的是子类/<strong>当前类</strong>的</p>
-<p><code>super</code> 调用的是<strong>父类</strong>的东西</p>
+<p><code>this</code> 指代的是当前对象，调用的是子类/<strong>当前类</strong>的<br>
+<code>super</code> 调用的是<strong>父类</strong>的东西</p>
 <p>构造器是一种特殊的方法</p>
 <ol style="list-style-type: decimal">
 <li>构造器没有返回值，并且不用<code>void</code>声明的</li>
@@ -538,25 +593,25 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><strong>public</strong></td>
+<td align="left"><code>public</code></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><strong>private</strong></td>
+<td align="left"><code>private</code></td>
 <td align="left">只有该类可以访问</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>default</strong></td>
+<td align="left"><code>default</code></td>
 <td align="left">在该类和该包中都可以访问</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>protected</strong></td>
+<td align="left"><code>protected</code></td>
 <td align="left">只有该类和继承该类的子类可以访问，不在同一个包不能访问</td>
 </tr>
 </tbody>
 </table>
-<p><strong>static</strong> 静态的（变量或者方法）静态修饰的内容会直接加载到内存</p>
-<p>不加 <strong>static</strong> 的属于非静态（），在创建对象的时候加载</p>
+<p><code>static</code> 静态的（变量或者方法）静态修饰的内容会直接加载到内存</p>
+<p>不加 <code>static</code> 的属于非静态（），在创建对象的时候加载</p>
 <h1 id="方法的-8-种调用规则">方法的 8 种调用规则</h1>
 <ol style="list-style-type: decimal">
 <li><strong>同</strong>类中静态方法调用静态方法：直接调用（方法名）；</li>
@@ -569,7 +624,8 @@
 <li><strong>异</strong>类中非静态调用非静态方法：先创建对象，然后使用对象名.方法名的方式调用。</li>
 </ol>
 <blockquote>
-<p>凡是调用非静态方法，先确认对象是否存在，如果不存在，都要先创建对象 凡是调用静态方法，先看是否在同一个类中，如果在，直接调用；如果不在，就使用类名.方法名的方式调用</p>
+<p>凡是调用非静态方法，先确认对象是否存在，如果不存在，都要先创建对象<br>
+凡是调用静态方法，先看是否在同一个类中，如果在，直接调用；如果不在，就使用类名.方法名的方式调用</p>
 </blockquote>
 <h1 id="静态属性">静态属性</h1>
 <p>静态属性在一个类中只有一份，创建任意多个对象共享这一份变量，这个属性在修改后，其他对象访问到的也会是修改后的值。</p>
@@ -592,14 +648,14 @@ Child类的构造器</code></pre>
 <h2 id="静态性多态">静态性多态 +</h2>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String a = <span class="string">"abc"</span>;</span><br><span class="line">        String b = <span class="string">"123"</span>;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> j = <span class="number">2</span>;</span><br><span class="line">        <span class="comment">// + 代表字符串的拼接符</span></span><br><span class="line">        String c = a + b;</span><br><span class="line">        <span class="comment">// + 代表加法运算符</span></span><br><span class="line">        <span class="keyword">int</span> k = i + j;</span><br><span class="line">        System.out.println(c);</span><br><span class="line">        System.out.println(k);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="非静态性多态运行时多态">非静态性多态（运行时多态）</h2>
-<p>父类的对象可以指向子类的空间，可以让这个对象产生子类的行为。</p>
-<p>goto(指针保留关键字)</p>
-<p>实现多态需要做到：</p>
-<ol style="list-style-type: decimal">
-<li>必须有继承关系 ；</li>
-<li>必须实现方法的重写。</li>
-<li>父类对象指向子类空间。</li>
-</ol>
+<p>父类的对象可以指向子类的空间，可以让这个对象产生子类的行为。<br>
+goto(指针保留关键字)</p>
+<blockquote>
+<p>实现多态需要做到：<br>
+1. 必须有继承关系；<br>
+2. 必须实现方法的重写。<br>
+3. 父类对象指向子类空间。</p>
+</blockquote>
 <h1 id="访问修饰符-final">访问修饰符 final</h1>
 <ol style="list-style-type: decimal">
 <li>当final修饰一个变量/属性时，值不可改变，常量</li>
@@ -608,7 +664,8 @@ Child类的构造器</code></pre>
 </ol>
 <h1 id="设计模式单例模式">设计模式：单例模式</h1>
 <blockquote>
-<p>出于对内存容量、数据安全性的考虑，不能随便无止境地创建对象，类似于计划生育。 要设计单例模式，就要从构造器入手通过访问修饰符来控制，以达到只能创建一个实例的目的。</p>
+<p>出于对内存容量、数据安全性的考虑，不能随便无止境地创建对象，类似于计划生育。<br>
+要设计单例模式，就要从构造器入手通过访问修饰符来控制，以达到只能创建一个实例的目的。</p>
 </blockquote>
 <h2 id="懒汉式">懒汉式</h2>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Lanhanshi</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Lanhanshi instance = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Lanhanshi</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Lanhanshi <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            instance = <span class="keyword">new</span> Lanhanshi();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -629,13 +686,21 @@ Child类的构造器</code></pre>
 <li>继承抽象类，需要强制重写（实现）抽象方法；继承类可以重写也可以不重写</li>
 </ol>
 <h1 id="抽象方法">抽象方法</h1>
-<p>× 不明确具体的实现细节，不使用 {} × 使用 <code>abstract</code> 修饰 × 对于有抽象方法的类，必须声明为 <code>abstract</code></p>
+<ul>
+<li>不明确具体的实现细节，不使用 {}</li>
+<li>使用 <code>abstract</code> 修饰</li>
+<li>对于有抽象方法的类，必须声明为 <code>abstract</code></li>
+</ul>
 <h1 id="接口-interface">接口 interface</h1>
 <p>接口是一个纯粹化的抽象类，接口是抽象方法的集合</p>
 <h2 id="接口和抽象类的区别">接口和抽象类的区别</h2>
 <ol style="list-style-type: decimal">
 <li>抽象类是 <code>abstract class</code> 修饰， 接口使用 <code>interface</code>。</li>
-<li>抽象类有属性和方法，接口里只有抽象方法和静态常量。 × 接口中的变量会默认添加 <code>public static final</code> 修饰符变成静态常量； × 接口中的方法会默认添加 <code>public abstract</code>。</li>
+<li>抽象类有属性和方法，接口里只有抽象方法和静态常量。
+<ul>
+<li>接口中的变量会默认添加 <code>public static final</code> 修饰符变成静态常量；</li>
+<li>接口中的方法会默认添加 <code>public abstract</code>。</li>
+</ul></li>
 <li>抽象类的子类是抽象类，也可以是实现他全部抽象方法的类；接口的子接口是继承关系，类不能继承接口。</li>
 <li>抽象类和类只能是单继承，接口可以多重继承。</li>
 <li>抽象类可以实现接口，接口不能继承抽象类。</li>
@@ -643,24 +708,33 @@ Child类的构造器</code></pre>
 </ol>
 <h1 id="内部类">内部类</h1>
 <blockquote>
-<p>访问外部类的包括私有在内的属性（访问私有属性：1. 实体类的get/set方法，2. 内部类）。 内部类和外部类一样都是独立的类。</p>
+<p>访问外部类的包括私有在内的属性（访问私有属性：1. 实体类的get/set方法，2. 内部类）。<br>
+内部类和外部类一样都是独立的类。</p>
 </blockquote>
-<p>× 成员内部类</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String memory = <span class="string">"私有属性"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Inner</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> String abc = <span class="string">"inner×abc"</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">getMemory</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            String abc = <span class="string">"inner-method-ABC"</span>;</span><br><span class="line">            System.out.println(memory);</span><br><span class="line">            System.out.println(abc);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">get</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Inner i = <span class="keyword">new</span> Inner();</span><br><span class="line">        String abc = <span class="string">"outer-method-abc"</span>;</span><br><span class="line">        i.getMemory();</span><br><span class="line">        System.out.println(<span class="string">"outer-get-abc="</span> + abc);</span><br><span class="line">        System.out.println(<span class="string">"Outer-memory="</span> + memory);</span><br><span class="line">        System.out.println(<span class="string">"this.memory="</span> + <span class="keyword">this</span>.memory);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>× 方法内部类</p>
+<ul>
+<li>成员内部类</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String memory = <span class="string">"私有属性"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Inner</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> String abc = <span class="string">"inner*abc"</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">getMemory</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            String abc = <span class="string">"inner-method-ABC"</span>;</span><br><span class="line">            System.out.println(memory);</span><br><span class="line">            System.out.println(abc);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">get</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Inner i = <span class="keyword">new</span> Inner();</span><br><span class="line">        String abc = <span class="string">"outer-method-abc"</span>;</span><br><span class="line">        i.getMemory();</span><br><span class="line">        System.out.println(<span class="string">"outer-get-abc="</span> + abc);</span><br><span class="line">        System.out.println(<span class="string">"Outer-memory="</span> + memory);</span><br><span class="line">        System.out.println(<span class="string">"this.memory="</span> + <span class="keyword">this</span>.memory);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>方法内部类</li>
+</ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer2</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">get</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="class"><span class="keyword">class</span> <span class="title">Inner</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">int</span> y = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">f1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                <span class="keyword">int</span> z = <span class="number">3</span>;</span><br><span class="line">                System.out.println(<span class="string">""</span> + x + y + z);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        Inner i = <span class="keyword">new</span> Inner();</span><br><span class="line">        i.f1();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Outer2 o = <span class="keyword">new</span> Outer2();</span><br><span class="line">        o.get();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>× 匿名内部类</p>
+<ul>
+<li>匿名内部类</li>
+</ul>
 <blockquote>
 <p>在定义之前马上实现抽象方法，在定义完后马上使用</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer3</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Outer3 o3 = <span class="keyword">new</span> Outer3();</span><br><span class="line">        Idemo idemo = <span class="keyword">new</span> Idemo() &#123;</span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">f1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                System.out.println(<span class="string">"Idemo接口的实现方法"</span>);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">f2</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        idemo.f1();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>× 静态内部类</p>
+<ul>
+<li>静态内部类</li>
+</ul>
 <blockquote>
 <p>只能访问外部类中的静态属性 静态嵌套类，顶级嵌套类</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer4</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Inner4</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">f1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            System.out.println(a);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="容器">容器</h1>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo1</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// List</span></span><br><span class="line">        <span class="comment">// 当前list大小为0</span></span><br><span class="line">        List list = <span class="keyword">new</span> ArrayList();</span><br><span class="line">        list.add(<span class="number">1</span>);</span><br><span class="line">        list.add(<span class="keyword">new</span> Integer(<span class="number">10</span>));</span><br><span class="line">        list.add(<span class="string">"abc"</span>);</span><br><span class="line">        list.add(<span class="number">0</span>, <span class="string">"haha"</span>);</span><br><span class="line">        <span class="comment">// list.remove(1);</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (list.contains(<span class="number">1</span>)) &#123;</span><br><span class="line">            System.out.println(<span class="string">"包含"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">"不包含"</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(list);</span><br><span class="line">        List list2 = <span class="keyword">new</span> ArrayList();</span><br><span class="line">        list2.add(<span class="string">"heihei"</span>);</span><br><span class="line"></span><br><span class="line">        list.addAll(list2);</span><br><span class="line">        <span class="comment">// list.clear();</span></span><br><span class="line">        Object[] objss = list.toArray();</span><br><span class="line">        <span class="keyword">for</span> (Object o : objss) &#123;</span><br><span class="line">            System.out.println(<span class="string">"hahahaha"</span> + o);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        StringBuilder str = <span class="keyword">new</span> StringBuilder(<span class="string">"helloworld"</span>);</span><br><span class="line">        StringBuilder str2 = str.reverse();</span><br><span class="line">        System.out.println(<span class="string">"反转"</span> + str2);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"hahahah\t"</span> + ((String) list.get(<span class="number">3</span>)).charAt(<span class="number">0</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo1</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// List</span></span><br><span class="line">        <span class="comment">// 当前list大小为0</span></span><br><span class="line">        List list = <span class="keyword">new</span> ArrayList();</span><br><span class="line">        list.add(<span class="number">1</span>);</span><br><span class="line">        list.add(<span class="keyword">new</span> Integer(<span class="number">10</span>));</span><br><span class="line">        list.add(<span class="string">"abc"</span>);</span><br><span class="line">        list.add(<span class="number">0</span>, <span class="string">"haha"</span>);</span><br><span class="line">        <span class="comment">// list.remove(1);</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (list.contains(<span class="number">1</span>)) &#123;</span><br><span class="line">            System.out.println(<span class="string">"包含"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">"不包含"</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(list);</span><br><span class="line">        List list2 = <span class="keyword">new</span> ArrayList();</span><br><span class="line">        list2.add(<span class="string">"heihei"</span>);</span><br><span class="line"></span><br><span class="line">        list.addAll(list2);</span><br><span class="line">        <span class="comment">// list.clear();</span></span><br><span class="line">        Object[] objss = list.toArray();</span><br><span class="line">        <span class="keyword">for</span> (Object o : objss) &#123;</span><br><span class="line">            System.out.println(<span class="string">"hahahaha"</span> + o);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        StringBuilder str = <span class="keyword">new</span> StringBuilder(<span class="string">"helloworld"</span>);</span><br><span class="line">        StringBuilder str2 = str.reverse();</span><br><span class="line">        System.out.println(<span class="string">"反转"</span> + str2);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"hahahah\t"</span> + ((String)list.get(<span class="number">3</span>)).charAt(<span class="number">0</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="arraylist-和-array-的区别"><code>ArrayList</code> 和 array 的区别</h2>
 <ol style="list-style-type: decimal">
 <li>array 是固定长度的数组， <code>ArrayList</code> 是动态长度（每次增加到当前长度的1.5倍）；</li>
@@ -689,13 +763,14 @@ Child类的构造器</code></pre>
 <ul>
 <li>lambda 表达式</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">"\nlambda表达式\n"</span>);</span><br><span class="line">list.forEach((aa) *&gt; System.out.print(aa + <span class="string">"\t"</span>));</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">"\nlambda表达式\n"</span>);</span><br><span class="line">list.forEach((aa) -&gt; System.out.print(aa + <span class="string">"\t"</span>));</span><br></pre></td></tr></table></figure>
 <ul>
 <li>lambda 表达式极简版</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">"\nlambda表达式极简版\n"</span>);</span><br><span class="line">list.forEach(System.out::print);</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>AL--ArrayList LL--LinkedList</p>
+<p>AL--ArrayList<br>
+LL--LinkedList</p>
 </blockquote>
 <p>AL LL</p>
 <ol style="list-style-type: decimal">
@@ -711,7 +786,10 @@ Child类的构造器</code></pre>
 </ol>
 <h2 id="hashset-treeset">HashSet TreeSet</h2>
 <blockquote>
-<p>HashSet 集合判断两个元素相等不单单是 <code>equals</code> 方法，并且必须 <code>hashCode()</code> 方法返回值也要相等。 TreeSet 是排序的。所以它所存储的类需要实现 Comparable 接口。 java.lang.Comparable 此接口强行对实现它的每个类的对象进行整体排序。 这种排序被称为类的自然排序，类的 <code>compareTo</code> 方法被称为它的自然比较方法。</p>
+<p><code>HashSet</code> 集合判断两个元素相等不单单是 <code>equals</code> 方法，并且必须 <code>hashCode()</code> 方法返回值也要相等。<br>
+<code>TreeSet</code> 是排序的。所以它所存储的类需要实现 <code>Comparable</code> 接口。<br>
+<code>java.lang.Comparable</code> 此接口强行对实现它的每个类的对象进行整体排序。<br>
+这种排序被称为类的自然排序，类的 <code>compareTo</code> 方法被称为它的自然比较方法。</p>
 </blockquote>
 <p><code>Set</code> 和 <code>ArrayList</code></p>
 <ol style="list-style-type: decimal">
@@ -720,17 +798,12 @@ Child类的构造器</code></pre>
 <li><code>ArrayList</code> 支持多个 null， <code>Set</code> 只支持 1 个 null</li>
 </ol>
 <h2 id="list-set-回顾"><code>List</code> <code>Set</code> 回顾</h2>
-<p>List 接口的常用实现类：<code>ArrayList</code> <code>LinkedList</code> <code>Vector</code></p>
-<p>Set 接口的常用实现类：<code>TreeSet</code> <code>HashSet</code></p>
-<p><code>ArrayList</code> ：每次增长到 1.5 倍 <code>Vector</code> ：每次增长到原来的 2 倍</p>
+<p>List 接口的常用实现类：<code>ArrayList</code>、<code>LinkedList</code>、<code>Vector</code><br>
+Set 接口的常用实现类：<code>TreeSet</code>、<code>HashSet</code></p>
+<p><code>ArrayList</code>：每次增长到 1.5 倍<br>
+<code>Vector</code>：每次增长到原来的 2 倍</p>
 <h2 id="listsetmap-的区别"><code>List</code>、<code>Set</code>、<code>Map</code> 的区别</h2>
-<table style="width:47%;">
-<colgroup>
-<col width="12%">
-<col width="12%">
-<col width="12%">
-<col width="9%">
-</colgroup>
+<table>
 <thead>
 <tr class="header">
 <th align="center">集合</th>
@@ -762,30 +835,32 @@ Child类的构造器</code></pre>
 <td align="center"><code>HashSet</code></td>
 <td align="center">单个</td>
 <td align="center">不同步</td>
-<td align="left">不能像 List 那样直接通过 <code>get</code> 索引的方式获取，只能遍历获取</td>
+<td align="left">不能像List那样直接通过<code>get</code>索引的方式获取，只能遍历获取</td>
 </tr>
 <tr class="odd">
 <td align="center"><code>TreeSet</code></td>
 <td align="center">单个</td>
 <td align="center">不同步</td>
-<td align="left">不能像 List 那样直接通过 <code>get</code> 索引的方式获取，只能遍历获取 对于数字类型和字符类型的对象，还支持自然升序的排序方式</td>
+<td align="left">不能像List那样直接通过<code>get</code>索引的方式获取，只能遍历获取<br>对于数字类型和字符类型的对象，还支持自然升序的排序方式</td>
 </tr>
 <tr class="even">
 <td align="center"><code>Hashtable</code></td>
 <td align="center">成对</td>
 <td align="center">同步</td>
-<td align="left"><code>getKey</code> 值的方式访问元素，不允许 <code>null</code> 键和 <code>null</code> 值</td>
+<td align="left"><code>getKey</code>值的方式访问元素，不允许 <code>null</code> 键和 <code>null</code> 值</td>
 </tr>
 <tr class="odd">
 <td align="center"><code>HashMap</code></td>
 <td align="center">成对</td>
 <td align="center">不同步</td>
-<td align="left"><code>getKey</code> 值的方式访问元素，允许一个 <code>null</code> 键和多个 <code>null</code> 值</td>
+<td align="left"><code>getKey</code>值的方式访问元素，允许一个 <code>null</code>键和多个<code>null</code>值</td>
 </tr>
 </tbody>
 </table>
 <h2 id="map-的实现类-hashmap-和-hashtable-映射关系-kv-key-value"><code>Map</code> 的实现类 <code>HashMap</code> 和 <code>Hashtable</code> （映射关系 KV Key Value）</h2>
-<p><code>Hashtable</code> 不允许有 <code>null</code> 键或 <code>null</code> 值 <code>HashMap</code> 允许有 1 个 <code>null</code> 键和多个 <code>null</code> 值 <code>Hashtable</code> 基于老版本的抽象类 <code>Dictionary</code> ， <code>HashMap</code> 是较新的实现了 <code>Map</code> 接口的映射管理工具 <code>Hashtable</code> 支持线程安全的，同步的； <code>HashMap</code> 不支持线程安全，不同的 <code>HashMap</code> 的效率更高，<code>Hashtable</code> 的效率较低</p>
+<p><code>Hashtable</code> 不允许有 <code>null</code> 键或 <code>null</code> 值 <code>HashMap</code> 允许有 1 个 <code>null</code> 键和多个 <code>null</code> 值<br>
+<code>Hashtable</code> 基于老版本的抽象类 <code>Dictionary</code> ， <code>HashMap</code> 是较新的实现了 <code>Map</code> 接口的映射管理工具<br>
+<code>Hashtable</code> 支持线程安全的，同步的； <code>HashMap</code> 不支持线程安全，不同的 <code>HashMap</code> 的效率更高，<code>Hashtable</code> 的效率较低</p>
 <h2 id="collection-和-collections-的区别"><code>Collection</code> 和 <code>Collections</code> 的区别</h2>
 <ol style="list-style-type: decimal">
 <li><code>Collection</code> 是接口，实现它的最主要的接口是 <code>List</code> 和 <code>Set</code></li>
@@ -871,9 +946,15 @@ Child类的构造器</code></pre>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 实现线程的两种方法</span></span><br><span class="line">        MyThread my1 = <span class="keyword">new</span> MyThread();</span><br><span class="line">        Thread my2 = <span class="keyword">new</span> Thread(<span class="keyword">new</span> MyRunnable);</span><br><span class="line">        my1.star();</span><br><span class="line">        <span class="comment">// 进入阻塞状态</span></span><br><span class="line">        my2.suspend();</span><br><span class="line">        <span class="comment">// 恢复挂起的线程</span></span><br><span class="line">        my2.resume();</span><br><span class="line">        my1.setPriority(Thread.MAX_PRIORITY);</span><br><span class="line">        my2.setPriority(Thread.MIN_PRIORITY);</span><br><span class="line">        <span class="comment">// 子线程加入主线程，主线程必须等待子线程结束才能结束</span></span><br><span class="line">        my1.join();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="数据库连接">数据库连接</h1>
 <h2 id="jdbc">JDBC</h2>
-<p>Java DataBase Connectivity Java 数据库连接</p>
+<blockquote>
+<p>Java DataBase Connectivity<br>
+Java 数据库连接</p>
+</blockquote>
 <h2 id="odbc-c">ODBC C</h2>
-<p>Open DataBase Connectivity WOSA Windows Open Server Architecture</p>
+<blockquote>
+<p>Open DataBase Connectivity<br>
+WOSA Windows Open Server Architecture</p>
+</blockquote>
 <h2 id="jdbc-vs-odbc">JDBC vs ODBC</h2>
 <ol style="list-style-type: decimal">
 <li>JDBC 有面向对象的思想，类、接口；ODBC 面向过程的思想。当满足相同需求的时候，JDBC 往往节省了更多的代码。入门更容易，开发效率更高。</li>
@@ -885,7 +966,12 @@ Child类的构造器</code></pre>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hellojava;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.DriverManager;</span><br><span class="line"><span class="keyword">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> java.sql.Statement;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">         * 1、加载驱动 2、创建连接 3、创建命令 4、执行命令 5、关闭连接</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 1、加载驱动</span></span><br><span class="line">        <span class="comment">// 反射</span></span><br><span class="line">        <span class="comment">// com.mysql.jdbc.Driver.class</span></span><br><span class="line">        Connection conn = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 创建到数据库的连接</span></span><br><span class="line">            <span class="comment">// Wrapper接口 -&gt; 子接口 Connection 用于建立到数据库的连接，执行sql，返回结果</span></span><br><span class="line">            <span class="comment">// DriverManager</span></span><br><span class="line">            <span class="comment">// 数据源：getConnection方法会建立一个到指定URL的连接</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">// protocol http https ftp ..</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">// user 访问数据库的用户名</span></span><br><span class="line">            <span class="comment">// password 对应的密码</span></span><br><span class="line"></span><br><span class="line">            String url = <span class="string">"jdbc:mysql://127.0.0.1:3306/test1013"</span>;</span><br><span class="line">            String user = <span class="string">"root"</span>;</span><br><span class="line">            String password = <span class="string">"a111"</span>;</span><br><span class="line">            conn = DriverManager.getConnection(url, user, password);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 创建命令对象</span></span><br><span class="line">            <span class="comment">// Statement stm = conn.createStatement();</span></span><br><span class="line">            <span class="comment">// String sql = "delete from BOOK where bookId=70105";</span></span><br><span class="line">            <span class="comment">// int a = stm.executeUpdate(sql);</span></span><br><span class="line"></span><br><span class="line">            Statement stm = conn.createStatement();</span><br><span class="line">            String sql = <span class="string">"select * from book where bookId &gt; 70000"</span>;</span><br><span class="line">            <span class="comment">// ResultSet 结果集 只能正向遍历，而且必须全部遍历</span></span><br><span class="line">            <span class="comment">// 连线结果集，不能在读取之前关闭</span></span><br><span class="line">            ResultSet rs = stm.executeQuery(sql);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">while</span> (rs.next()) &#123;</span><br><span class="line">                System.out.print(<span class="string">"bookId="</span> + rs.getString(<span class="string">"bookId"</span>));</span><br><span class="line">                System.out.print(<span class="string">"\tbookName="</span> + rs.getString(<span class="string">"bookName"</span>));</span><br><span class="line">                System.out.print(<span class="string">"\tbookPrice="</span> + rs.getDouble(<span class="string">"bookPrice"</span>));</span><br><span class="line">                System.out.print(<span class="string">"\tbookAuthor="</span> + rs.getString(<span class="string">"bookAuthor"</span>));</span><br><span class="line">                System.out.println(<span class="string">"\tbookInfo="</span> + rs.getString(<span class="string">"bookInfo"</span>));</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Prepare is half the battle;</span></span><br><span class="line">            <span class="comment">// String sql = "INSERT INTO BOOK VALUES(DEFAULT,?,?,?,?)";</span></span><br><span class="line">            <span class="comment">// PreparedStatement ps = conn.prepareStatement(sql);</span></span><br><span class="line">            <span class="comment">// ps.setString(1, "红楼梦");</span></span><br><span class="line">            <span class="comment">// ps.setDouble(2, 99.98);</span></span><br><span class="line">            <span class="comment">// ps.setString(3, "曹雪芹");</span></span><br><span class="line">            <span class="comment">// ps.setString(4, "测试");</span></span><br><span class="line">            <span class="comment">// int a = ps.executeUpdate();</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">// 处理结果</span></span><br><span class="line">            <span class="comment">// System.out.println("SQL执行完毕，" + (a &gt; 0 ? "成功" : "失败"));</span></span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"驱动程序加载失败"</span>);</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"SQL异常！"</span>);</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="comment">// 关闭连接</span></span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                conn.close();</span><br><span class="line">            &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">                <span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hellojava.test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.DriverManager;</span><br><span class="line"><span class="keyword">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> java.sql.Statement;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 1、加载驱动</span></span><br><span class="line">            <span class="comment">// 设计模式</span></span><br><span class="line">            <span class="comment">// "com.mysql.jdbc.Driver"</span></span><br><span class="line">            <span class="comment">// "com.microsoft.sqlserver.sqlserver.Driver"</span></span><br><span class="line">            Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 2、建立连接</span></span><br><span class="line">            <span class="comment">// localhost = 127.0.0.1</span></span><br><span class="line">            String url = <span class="string">"jdbc:mysql://localhost:3306/test1013"</span>;</span><br><span class="line">            String user = <span class="string">"root"</span>;</span><br><span class="line">            String password = <span class="string">"a111"</span>;</span><br><span class="line">            Connection conn = DriverManager.getConnection(url, user, password);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 3、创建命令对象</span></span><br><span class="line">            <span class="comment">// Wrapper</span></span><br><span class="line">            Statement stm = conn.createStatement();</span><br><span class="line">            String sql = <span class="string">"select * from book order by bookId desc limit 100"</span>;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 4、执行命令，处理结果</span></span><br><span class="line">            ResultSet rs = stm.executeQuery(sql);</span><br><span class="line">            <span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">                System.out.print(<span class="string">"bookId:"</span>+rs.getInt(<span class="string">"bookId"</span>));</span><br><span class="line">                System.out.print(<span class="string">"\tbookName:"</span>+rs.getString(<span class="string">"bookName"</span>));</span><br><span class="line">                System.out.println(<span class="string">"\tbookAuthor:"</span>+rs.getObject(<span class="string">"bookAuthor"</span>));</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 5、关闭连接</span></span><br><span class="line">            conn.close();</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 1、高内聚</span></span><br><span class="line">            <span class="comment">// 2、低耦合</span></span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"找不到驱动"</span>);</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">catch</span>(SQLException e)&#123;</span><br><span class="line">            System.out.println(<span class="string">"SQL异常"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="statement-preparedstatement-callablestatement-区别"><code>Statement</code> <code>PreparedStatement</code> <code>CallableStatement</code> 区别</h2>
-<p>父接口 <code>Wrapper</code> -&gt; <code>Statement</code> -&gt; <code>PreparedStatement</code> -&gt; <code>CallableStatement</code> <code>Statement</code> 用来创建并执行SQL，然后返回一个值 <code>PreparedStatement</code> 预编译的 SQL 命令对象，支持输入参数 <code>CallableStatement</code> 可以支持输入输出参数的SQL命令对象（ <code>Procedure</code> ）</p>
+<blockquote>
+<p>父接口 <code>Wrapper</code> -&gt; <code>Statement</code> -&gt; <code>PreparedStatement</code> -&gt; <code>CallableStatement</code><br>
+<code>Statement</code> 用来创建并执行SQL，然后返回一个值<br>
+<code>PreparedStatement</code> 预编译的 SQL 命令对象，支持输入参数<br>
+<code>CallableStatement</code> 可以支持输入输出参数的SQL命令对象（ <code>Procedure</code> ）</p>
+</blockquote>
 <h2 id="preparedstatement-以下简称-ps优点"><code>PreparedStatement</code> （以下简称 PS）优点</h2>
 <p><code>Statement</code> -&gt; <code>JVM</code> -&gt; <code>DBMS</code> 编译 -&gt; 解释</p>
 <ol style="list-style-type: decimal">
@@ -1029,38 +1115,6 @@ Child类的构造器</code></pre>
     <div class="post-spread">
       
         
-  <div class="bdsharebuttonbox">
-    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
-    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
-    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-    <a href="#" class="bds_more" data-cmd="more"></a>
-    <a class="bds_count" data-cmd="count"></a>
-  </div>
-  <script>
-    window._bd_share_config = {
-      "common": {
-        "bdText": "",
-        "bdMini": "2",
-        "bdMiniList": false,
-        "bdPic": ""
-      },
-      "share": {
-        "bdSize": "16",
-        "bdStyle": "0"
-      },
-      "image": {
-        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
-        "viewText": "分享到：",
-        "viewSize": "16"
-      }
-    }
-  </script>
-
 <script>
   with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
 </script>
@@ -1095,6 +1149,8 @@ Child类的构造器</code></pre>
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
