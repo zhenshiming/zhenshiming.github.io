@@ -170,7 +170,7 @@
 <meta property="og:site_name" content="Kai Ma">
 <meta property="og:description" content="这是我Java培训时Java基础部分的笔记，只是按时间顺序简单的罗列了一下，没有做特别的整理，只是想在这里记录一下。一方面是为了分享，另一方面是为了方便自己查阅，面试前肯定要看看Java基础。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-12T10:03:44.906Z">
+<meta property="og:updated_time" content="2018-08-12T13:24:22.237Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Notes for JavaSE">
 <meta name="twitter:description" content="这是我Java培训时Java基础部分的笔记，只是按时间顺序简单的罗列了一下，没有做特别的整理，只是想在这里记录一下。一方面是为了分享，另一方面是为了方便自己查阅，面试前肯定要看看Java基础。">
@@ -463,7 +463,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-08-12 18:03:44" itemprop="dateModified" datetime="2018-08-12T18:03:44+08:00">2018-08-12</time>
+                <time title="Modified: 2018-08-12 21:24:22" itemprop="dateModified" datetime="2018-08-12T21:24:22+08:00">2018-08-12</time>
               
             
           </span>
@@ -610,22 +610,22 @@
 </tr>
 </tbody>
 </table>
-<p><code>static</code> 静态的（变量或者方法）静态修饰的内容会直接加载到内存</p>
-<p>不加 <code>static</code> 的属于非静态（），在创建对象的时候加载</p>
+<p><code>static</code> 静态的（变量或者方法）静态修饰的内容会直接加载到内存<br>
+不加 <code>static</code> 的属于非静态（），在创建对象的时候加载</p>
 <h1 id="方法的-8-种调用规则">方法的 8 种调用规则</h1>
 <ol style="list-style-type: decimal">
 <li><strong>同</strong>类中静态方法调用静态方法：直接调用（方法名）；</li>
-<li><strong>同</strong>类中静态方法调用非静态方法：先创建对象，然后使用对象名.方法名的方式调用</li>
+<li><strong>同</strong>类中静态方法调用非静态方法：先创建对象，然后使用<code>对象名.方法名</code>的方式调用</li>
 <li><strong>同</strong>类中非静态方法调用静态方法：直接调用（方法名）；</li>
 <li><strong>同</strong>类中非静态方法调用非静态方法：直接调用（方法名）；</li>
-<li><strong>异</strong>类中静态调用静态：直接调用（类名.方法名）；</li>
-<li><strong>异</strong>类中静态调用非静态方法：先创建对象，然后使用对象名.方法名的方式调用；</li>
-<li><strong>异</strong>类中非静态调用静态方法：直接调用（类名.方法名）；</li>
-<li><strong>异</strong>类中非静态调用非静态方法：先创建对象，然后使用对象名.方法名的方式调用。</li>
+<li><strong>异</strong>类中静态调用静态：直接调用（<code>类名.方法名</code>）；</li>
+<li><strong>异</strong>类中静态调用非静态方法：先创建对象，然后使用<code>对象名.方法名</code>的方式调用；</li>
+<li><strong>异</strong>类中非静态调用静态方法：直接调用（<code>类名.方法名</code>）；</li>
+<li><strong>异</strong>类中非静态调用非静态方法：先创建对象，然后使用<code>对象名.方法名</code>的方式调用。</li>
 </ol>
 <blockquote>
 <p>凡是调用非静态方法，先确认对象是否存在，如果不存在，都要先创建对象<br>
-凡是调用静态方法，先看是否在同一个类中，如果在，直接调用；如果不在，就使用类名.方法名的方式调用</p>
+凡是调用静态方法，先看是否在同一个类中，如果在，直接调用；如果不在，就使用<code>类名.方法名</code>的方式调用</p>
 </blockquote>
 <h1 id="静态属性">静态属性</h1>
 <p>静态属性在一个类中只有一份，创建任意多个对象共享这一份变量，这个属性在修改后，其他对象访问到的也会是修改后的值。</p>
@@ -650,12 +650,14 @@ Child类的构造器</code></pre>
 <h2 id="非静态性多态运行时多态">非静态性多态（运行时多态）</h2>
 <p>父类的对象可以指向子类的空间，可以让这个对象产生子类的行为。<br>
 goto(指针保留关键字)</p>
-<blockquote>
-<p>实现多态需要做到：<br>
-1. 必须有继承关系；<br>
-2. 必须实现方法的重写。<br>
-3. 父类对象指向子类空间。</p>
-</blockquote>
+<p>实现多态需要做到：</p>
+<ol style="list-style-type: decimal">
+<li>必须有继承关系；<br>
+</li>
+<li>必须实现方法的重写。<br>
+</li>
+<li>父类对象指向子类空间。</li>
+</ol>
 <h1 id="访问修饰符-final">访问修饰符 final</h1>
 <ol style="list-style-type: decimal">
 <li>当final修饰一个变量/属性时，值不可改变，常量</li>
@@ -785,12 +787,12 @@ LL--LinkedList</p>
 <li>性能：由于安全性的引入，性能稍弱于 <code>ArrayList</code></li>
 </ol>
 <h2 id="hashset-treeset">HashSet TreeSet</h2>
-<blockquote>
-<p><code>HashSet</code> 集合判断两个元素相等不单单是 <code>equals</code> 方法，并且必须 <code>hashCode()</code> 方法返回值也要相等。<br>
-<code>TreeSet</code> 是排序的。所以它所存储的类需要实现 <code>Comparable</code> 接口。<br>
-<code>java.lang.Comparable</code> 此接口强行对实现它的每个类的对象进行整体排序。<br>
-这种排序被称为类的自然排序，类的 <code>compareTo</code> 方法被称为它的自然比较方法。</p>
-</blockquote>
+<ul>
+<li><code>HashSet</code> 集合判断两个元素相等不单单是 <code>equals</code> 方法，并且必须 <code>hashCode()</code> 方法返回值也要相等。</li>
+<li><code>TreeSet</code> 是排序的。所以它所存储的类需要实现 <code>Comparable</code> 接口。</li>
+<li><code>java.lang.Comparable</code> 此接口强行对实现它的每个类的对象进行整体排序。</li>
+<li>这种排序被称为类的自然排序，类的 <code>compareTo</code> 方法被称为它的自然比较方法。</li>
+</ul>
 <p><code>Set</code> 和 <code>ArrayList</code></p>
 <ol style="list-style-type: decimal">
 <li><code>Set</code> 支持重复项过滤<br>
@@ -798,8 +800,8 @@ LL--LinkedList</p>
 <li><code>ArrayList</code> 支持多个 null， <code>Set</code> 只支持 1 个 null</li>
 </ol>
 <h2 id="list-set-回顾"><code>List</code> <code>Set</code> 回顾</h2>
-<p>List 接口的常用实现类：<code>ArrayList</code>、<code>LinkedList</code>、<code>Vector</code><br>
-Set 接口的常用实现类：<code>TreeSet</code>、<code>HashSet</code></p>
+<p><code>List</code> 接口的常用实现类：<code>ArrayList</code>、<code>LinkedList</code>、<code>Vector</code><br>
+<code>Set</code> 接口的常用实现类：<code>TreeSet</code>、<code>HashSet</code></p>
 <p><code>ArrayList</code>：每次增长到 1.5 倍<br>
 <code>Vector</code>：每次增长到原来的 2 倍</p>
 <h2 id="listsetmap-的区别"><code>List</code>、<code>Set</code>、<code>Map</code> 的区别</h2>
@@ -858,9 +860,13 @@ Set 接口的常用实现类：<code>TreeSet</code>、<code>HashSet</code></p>
 </tbody>
 </table>
 <h2 id="map-的实现类-hashmap-和-hashtable-映射关系-kv-key-value"><code>Map</code> 的实现类 <code>HashMap</code> 和 <code>Hashtable</code> （映射关系 KV Key Value）</h2>
-<p><code>Hashtable</code> 不允许有 <code>null</code> 键或 <code>null</code> 值 <code>HashMap</code> 允许有 1 个 <code>null</code> 键和多个 <code>null</code> 值<br>
-<code>Hashtable</code> 基于老版本的抽象类 <code>Dictionary</code> ， <code>HashMap</code> 是较新的实现了 <code>Map</code> 接口的映射管理工具<br>
-<code>Hashtable</code> 支持线程安全的，同步的； <code>HashMap</code> 不支持线程安全，不同的 <code>HashMap</code> 的效率更高，<code>Hashtable</code> 的效率较低</p>
+<ul>
+<li><code>Hashtable</code> 不允许有 <code>null</code> 键或 <code>null</code> 值 <code>HashMap</code> 允许有 1 个 <code>null</code> 键和多个 <code>null</code> 值<br>
+</li>
+<li><code>Hashtable</code> 基于老版本的抽象类 <code>Dictionary</code> ， <code>HashMap</code> 是较新的实现了 <code>Map</code> 接口的映射管理工具<br>
+</li>
+<li><code>Hashtable</code> 支持线程安全的，同步的； <code>HashMap</code> 不支持线程安全，不同的 <code>HashMap</code> 的效率更高，<code>Hashtable</code> 的效率较低</li>
+</ul>
 <h2 id="collection-和-collections-的区别"><code>Collection</code> 和 <code>Collections</code> 的区别</h2>
 <ol style="list-style-type: decimal">
 <li><code>Collection</code> 是接口，实现它的最主要的接口是 <code>List</code> 和 <code>Set</code></li>
@@ -905,7 +911,9 @@ Set 接口的常用实现类：<code>TreeSet</code>、<code>HashSet</code></p>
 <li>实现 <code>Runnable</code> 接口</li>
 </ol>
 <blockquote>
-<p>实现 <code>Runnable</code> 接口比继承 <code>Thread</code> 类好： 1. 排除 java 单继承的限制 2. 方便共享资源</p>
+<p>实现 <code>Runnable</code> 接口比继承 <code>Thread</code> 类好：<br>
+1. 排除 java 单继承的限制<br>
+2. 方便共享资源</p>
 </blockquote>
 <h2 id="线程的五种状态">线程的五种状态</h2>
 <table>
@@ -966,12 +974,12 @@ WOSA Windows Open Server Architecture</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hellojava;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.DriverManager;</span><br><span class="line"><span class="keyword">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> java.sql.Statement;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">         * 1、加载驱动 2、创建连接 3、创建命令 4、执行命令 5、关闭连接</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 1、加载驱动</span></span><br><span class="line">        <span class="comment">// 反射</span></span><br><span class="line">        <span class="comment">// com.mysql.jdbc.Driver.class</span></span><br><span class="line">        Connection conn = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 创建到数据库的连接</span></span><br><span class="line">            <span class="comment">// Wrapper接口 -&gt; 子接口 Connection 用于建立到数据库的连接，执行sql，返回结果</span></span><br><span class="line">            <span class="comment">// DriverManager</span></span><br><span class="line">            <span class="comment">// 数据源：getConnection方法会建立一个到指定URL的连接</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">// protocol http https ftp ..</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">// user 访问数据库的用户名</span></span><br><span class="line">            <span class="comment">// password 对应的密码</span></span><br><span class="line"></span><br><span class="line">            String url = <span class="string">"jdbc:mysql://127.0.0.1:3306/test1013"</span>;</span><br><span class="line">            String user = <span class="string">"root"</span>;</span><br><span class="line">            String password = <span class="string">"a111"</span>;</span><br><span class="line">            conn = DriverManager.getConnection(url, user, password);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 创建命令对象</span></span><br><span class="line">            <span class="comment">// Statement stm = conn.createStatement();</span></span><br><span class="line">            <span class="comment">// String sql = "delete from BOOK where bookId=70105";</span></span><br><span class="line">            <span class="comment">// int a = stm.executeUpdate(sql);</span></span><br><span class="line"></span><br><span class="line">            Statement stm = conn.createStatement();</span><br><span class="line">            String sql = <span class="string">"select * from book where bookId &gt; 70000"</span>;</span><br><span class="line">            <span class="comment">// ResultSet 结果集 只能正向遍历，而且必须全部遍历</span></span><br><span class="line">            <span class="comment">// 连线结果集，不能在读取之前关闭</span></span><br><span class="line">            ResultSet rs = stm.executeQuery(sql);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">while</span> (rs.next()) &#123;</span><br><span class="line">                System.out.print(<span class="string">"bookId="</span> + rs.getString(<span class="string">"bookId"</span>));</span><br><span class="line">                System.out.print(<span class="string">"\tbookName="</span> + rs.getString(<span class="string">"bookName"</span>));</span><br><span class="line">                System.out.print(<span class="string">"\tbookPrice="</span> + rs.getDouble(<span class="string">"bookPrice"</span>));</span><br><span class="line">                System.out.print(<span class="string">"\tbookAuthor="</span> + rs.getString(<span class="string">"bookAuthor"</span>));</span><br><span class="line">                System.out.println(<span class="string">"\tbookInfo="</span> + rs.getString(<span class="string">"bookInfo"</span>));</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Prepare is half the battle;</span></span><br><span class="line">            <span class="comment">// String sql = "INSERT INTO BOOK VALUES(DEFAULT,?,?,?,?)";</span></span><br><span class="line">            <span class="comment">// PreparedStatement ps = conn.prepareStatement(sql);</span></span><br><span class="line">            <span class="comment">// ps.setString(1, "红楼梦");</span></span><br><span class="line">            <span class="comment">// ps.setDouble(2, 99.98);</span></span><br><span class="line">            <span class="comment">// ps.setString(3, "曹雪芹");</span></span><br><span class="line">            <span class="comment">// ps.setString(4, "测试");</span></span><br><span class="line">            <span class="comment">// int a = ps.executeUpdate();</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">// 处理结果</span></span><br><span class="line">            <span class="comment">// System.out.println("SQL执行完毕，" + (a &gt; 0 ? "成功" : "失败"));</span></span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"驱动程序加载失败"</span>);</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"SQL异常！"</span>);</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="comment">// 关闭连接</span></span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                conn.close();</span><br><span class="line">            &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">                <span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hellojava.test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.DriverManager;</span><br><span class="line"><span class="keyword">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> java.sql.Statement;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 1、加载驱动</span></span><br><span class="line">            <span class="comment">// 设计模式</span></span><br><span class="line">            <span class="comment">// "com.mysql.jdbc.Driver"</span></span><br><span class="line">            <span class="comment">// "com.microsoft.sqlserver.sqlserver.Driver"</span></span><br><span class="line">            Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 2、建立连接</span></span><br><span class="line">            <span class="comment">// localhost = 127.0.0.1</span></span><br><span class="line">            String url = <span class="string">"jdbc:mysql://localhost:3306/test1013"</span>;</span><br><span class="line">            String user = <span class="string">"root"</span>;</span><br><span class="line">            String password = <span class="string">"a111"</span>;</span><br><span class="line">            Connection conn = DriverManager.getConnection(url, user, password);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 3、创建命令对象</span></span><br><span class="line">            <span class="comment">// Wrapper</span></span><br><span class="line">            Statement stm = conn.createStatement();</span><br><span class="line">            String sql = <span class="string">"select * from book order by bookId desc limit 100"</span>;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 4、执行命令，处理结果</span></span><br><span class="line">            ResultSet rs = stm.executeQuery(sql);</span><br><span class="line">            <span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">                System.out.print(<span class="string">"bookId:"</span>+rs.getInt(<span class="string">"bookId"</span>));</span><br><span class="line">                System.out.print(<span class="string">"\tbookName:"</span>+rs.getString(<span class="string">"bookName"</span>));</span><br><span class="line">                System.out.println(<span class="string">"\tbookAuthor:"</span>+rs.getObject(<span class="string">"bookAuthor"</span>));</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 5、关闭连接</span></span><br><span class="line">            conn.close();</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 1、高内聚</span></span><br><span class="line">            <span class="comment">// 2、低耦合</span></span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"找不到驱动"</span>);</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">catch</span>(SQLException e)&#123;</span><br><span class="line">            System.out.println(<span class="string">"SQL异常"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="statement-preparedstatement-callablestatement-区别"><code>Statement</code> <code>PreparedStatement</code> <code>CallableStatement</code> 区别</h2>
-<blockquote>
-<p>父接口 <code>Wrapper</code> -&gt; <code>Statement</code> -&gt; <code>PreparedStatement</code> -&gt; <code>CallableStatement</code><br>
-<code>Statement</code> 用来创建并执行SQL，然后返回一个值<br>
-<code>PreparedStatement</code> 预编译的 SQL 命令对象，支持输入参数<br>
-<code>CallableStatement</code> 可以支持输入输出参数的SQL命令对象（ <code>Procedure</code> ）</p>
-</blockquote>
+<ul>
+<li>父接口 <code>Wrapper</code> -&gt; <code>Statement</code> -&gt; <code>PreparedStatement</code> -&gt; <code>CallableStatement</code></li>
+<li><code>Statement</code> 用来创建并执行SQL，然后返回一个值</li>
+<li><code>PreparedStatement</code> 预编译的 SQL 命令对象，支持输入参数</li>
+<li><code>CallableStatement</code> 可以支持输入输出参数的SQL命令对象（ <code>Procedure</code> ）</li>
+</ul>
 <h2 id="preparedstatement-以下简称-ps优点"><code>PreparedStatement</code> （以下简称 PS）优点</h2>
 <p><code>Statement</code> -&gt; <code>JVM</code> -&gt; <code>DBMS</code> 编译 -&gt; 解释</p>
 <ol style="list-style-type: decimal">
@@ -1068,18 +1076,6 @@ WOSA Windows Open Server Architecture</p>
       
 
       
-      
-        <div class="post-widgets">
-        
-          <div class="wp_rating">
-            <div id="wpac-rating"></div>
-          </div>
-        
-
-        
-
-        
-        </div>
       
       
 
@@ -1815,23 +1811,6 @@ WOSA Windows Open Server Architecture</p>
 
   
   
-  <script type="text/javascript">
-  wpac_init = window.wpac_init || [];
-  wpac_init.push({widget: 'Rating', id: 12389,
-    el: 'wpac-rating',
-    color: 'fc6423'
-  });
-  (function() {
-    if ('WIDGETPACK_LOADED' in window) return;
-    WIDGETPACK_LOADED = true;
-    var mc = document.createElement('script');
-    mc.type = 'text/javascript';
-    mc.async = true;
-    mc.src = '//embed.widgetpack.com/widget.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-  })();
-  </script>
-
 
   
 
